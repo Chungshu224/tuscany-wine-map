@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>托斯卡納葡萄酒地圖導覽</title>
+  <style>
+    body {
+      font-family: 'Helvetica', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      height: 100vh;
+    }
+    aside {
+      width: 30%;
+      background: #f2f2f2;
+      padding: 20px;
+      overflow-y: auto;
+      box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+    }
+    main {
+      width: 70%;
+      position: relative;
+    }
+    .region-list a {
+      display: block;
+      padding: 8px 0;
+      text-decoration: none;
+      color: #6b0f1a;
+    }
+    .region-list a:hover {
+      text-decoration: underline;
+    }
+    .map-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    header {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <aside>
+    <header>托斯卡納 DOCG 產區</header>
+    <nav class="region-list">
+      <a href="./regions/brunello.html">Brunello di Montalcino</a>
+      <a href="./regions/chianti.html">Chianti</a>
+      <a href="./regions/chianti-classico.html">Chianti Classico</a>
+      <a href="./regions/vino-nobile.html">Vino Nobile di Montepulciano</a>
+      <a href="./regions/morellino.html">Morellino di Scansano</a>
+      <!-- 你可以繼續擴增清單 -->
+    </nav>
+  </aside>
+
+  <main>
+    <img src="./images/tuscany-map.jpg" alt="托斯卡納葡萄酒地圖" class="map-image" />
+  </main>
+</body>
+</html>
